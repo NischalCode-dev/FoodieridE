@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="containerr">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter email" required>
+        <small class="Emailerror">Wrong email</small>
+      </div>
+
+      <div class="input-group password-box">
+        <label for="password">Password</label>
+
+        <div class="pass-wrapper">
+          <input type="password" id="password" placeholder="Enter password">
+
+          <i class="ri-eye-line" id="togglePassword"></i>
+        </div>
+
+        <small class="Passworderror">Wrong Password</small>
+      </div>
+
+      <button type="submit">Login</button>
+      <div class="result">
+        <small class="resultmessage">Your Form is submitted</small>
+      </div>
+    </form>
+  </div>
+  <script src="script3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie ridE</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="mouse">
+            <h5>Move me</h5>
+        </div>
+        <div class="video">
+            <video autoplay muted loop id="bg-video">
+                <source src="https://b.zmtcdn.com/data/file_assets/2627bbed9d6c068e50d2aadcca11ddbb1743095925.mp4"
+                    type="video/mp4">
+            </video>
+
+            <div class="head">
+                <div class="up-text">
+                    <h1>Foodie ridE</h1>
+                </div>
+                <div class="up-text2">
+                    <h3>Nepal's #1</h3>
+                    <h3>Food delivery app</h3>
+                    <div class="up-text3">
+                        <p>Experience fast & easy online ordering</p>
+                        <p>on the Foodie ridE</p>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <p>Scroll down <i class="ri-arrow-down-double-line"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page2">
+        <div class="top-sell">
+            <h2>Top Selling Products</h2>
+        </div>
+        <div class="wheel-wrapper">
+
+            <div class="wheel" id="wheel">
+
+                <div class="wheel-item" data-name="Pizza" data-desc="Cheesy delicious pizza 🍕" data-price="Price:Rs.400"
+                    data-img="https://cdn.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_1280.jpg">
+                </div>
+
+                <div class="wheel-item" data-name="Burger" data-desc="Juicy burger 🍔" data-price="Price:Rs.200"
+                    data-img="https://images.unsplash.com/photo-1550547660-d9450f859349">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+                </div>
+
+                <div class="wheel-item" data-name="Momo" data-desc="Hot Nepali momo 🥟" data-price="Price:Rs.150"
+                    data-img="https://cdn.pixabay.com/photo/2024/05/21/23/54/ai-generated-8779349_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2024/05/21/23/54/ai-generated-8779349_1280.jpg">
+                </div>
+
+                <div class="wheel-item" data-name="Fries" data-desc="Chrispy Fries 🍟" data-price="Price:Rs.200"
+                    data-img="https://cdn.pixabay.com/photo/2024/01/23/08/11/ai-generated-8527044_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/23/08/11/ai-generated-8527044_1280.jpg">
+                </div>
+                <div class="wheel-item" data-name="Drinks" data-desc="Refreshing Drinks 🍸" data-price="Price:Rs.200"
+                    data-img="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+                </div>
+                <div class="wheel-item" data-name="Noodles" data-desc="Instant Noodles 🍜" data-price="Price:Rs.150"
+                    data-img="https://cdn.pixabay.com/photo/2021/07/15/19/45/spaghetti-6469293_1280.png">
+                    <img src="https://cdn.pixabay.com/photo/2021/07/15/19/45/spaghetti-6469293_1280.png">
+                </div>
+
+                <div class="wheel-item" data-name="Fried Chicken" data-desc="KFC Chicken 🍗" data-price="Price:Rs.600"
+                    data-img="https://cdn.pixabay.com/photo/2023/11/22/21/11/ai-generated-8406464_1280.png">
+                    <img src="https://cdn.pixabay.com/photo/2023/11/22/21/11/ai-generated-8406464_1280.png">
+                </div>
+                <div class="wheel-item" data-name="Ramen" data-desc="Japanese Noodles 🍜" data-price="Price:Rs.550"
+                    data-img="https://cdn.pixabay.com/photo/2024/06/18/07/13/ramen-8837174_1280.png">
+                    <img src="https://cdn.pixabay.com/photo/2024/06/18/07/13/ramen-8837174_1280.png">
+                </div>
+
+                <div class="wheel-item" data-name="Biryani" data-desc="Haidrabadi Biryani " data-price="Price:Rs.700"
+                    data-img="https://cdn.pixabay.com/photo/2024/01/18/17/20/ai-generated-8517258_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/18/17/20/ai-generated-8517258_1280.jpg">
+                </div>
+                <div class="wheel-item" data-name="Sandwich" data-desc="Breakfast Breaker 🥪" data-price="Price:Rs.250"
+                    data-img="https://cdn.pixabay.com/photo/2023/11/22/21/03/ai-generated-8406445_1280.png">
+                    <img src="https://cdn.pixabay.com/photo/2023/11/22/21/03/ai-generated-8406445_1280.png">
+                </div>
+
+
+
+            </div>
+
+            <!-- Product Details Card -->
+            <div class="product-card">
+                <img id="product-img" src="" alt="">
+                <h2 id="name">Pizza</h2>
+                <p id="desc">Cheesy delicious pizza 🍕</p>
+                <p id="pesc">Price:Rs.500</p>
+                <a href="javascript:void(0)" class="buy-btn" onclick="goToPage()">Buy</a>
+            </div>
+
+        </div>
+    </div>
+    <div id="page3">
+        <h1>Other Products</h1>
+        <div class="scroll-container">
+            <div class="card" onclick="goToPage('Pancakes',200)">
+                <img src="https://cdn.pixabay.com/photo/2017/09/19/08/52/pancake-2764589_1280.jpg">
+                <p>Pancake</p>
+                <a
+                    href="index2.html?name=Pancakes&price=200&desc=Delicious%20Pancake&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2017/09/19/08/52/pancake-2764589_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/06/24/05/26/hot-dog-2436748_1280.jpg">
+                <p>Hotdog</p>
+                <a
+                    href="index2.html?name=Hotdog&price=150&desc=Juicy%20hot%20dog%20with%20fresh%20toppings%20and%20sauces%20.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2017/06/24/05/26/hot-dog-2436748_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/04/03/17/51/rotisserie-chicken-705579_1280.jpg">
+                <p>Full-Chicken</p>
+                <a
+                    href="index2.html?name=Full-Chicken&price=1500&desc=Juciy%20Chicken&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2015/04/03/17/51/rotisserie-chicken-705579_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2021/12/27/04/57/lanzhou-6896276_1280.jpg">
+                <p>Sekwa</p>
+                <a
+                    href="index2.html?name=Sekwa&price=350&desc=Chrispy%20Sekwa.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2021/12/27/04/57/lanzhou-6896276_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2023/06/20/10/05/tacos-8076612_1280.jpg">
+                <p>Taco</p>
+                <a
+                    href="index2.html?name=Taco&price=150&desc=Crispy%20taco%20with%20flavorful%20fillings%20and%20sauces.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2023/06/20/10/05/tacos-8076612_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/10/03/23/15/ice-1713160_1280.jpg">
+                <p>Ice-cream</p>
+                <a
+                    href="index2.html?name=Ice-cream&price=135&desc=Creamy%20and%20refreshing%20ice%20cream%20treat.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2016/10/03/23/15/ice-1713160_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/12/03/10/11/nachos-1074597_1280.jpg">
+                <p>Nachos</p>
+                <a
+                    href="index2.html?name=Nachos&price=250&desc=Crispy%20nachos%20with%20cheese%20and%20salsa.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2015/12/03/10/11/nachos-1074597_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2019/01/02/04/24/octopus-3908010_1280.jpg">
+                <p>Fried Octopus</p>
+                <a
+                    href="index2.html?name=Fried-Octopus&price=2200&desc=Crispy%20fried%20octopus%20with%20rich%20seafood%20flavor.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2019/01/02/04/24/octopus-3908010_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2024/05/02/18/00/sushi-8735298_1280.jpg">
+                <p>Sushi</p>
+                <a
+                    href="index2.html?name=Sushi&price=400&desc=Fresh%20sushi%20made%20with%20rice,%20seafood,%20and%20seaweed.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2024/05/02/18/00/sushi-8735298_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/04/15/14/57/food-723922_1280.jpg">
+                <p>Fish Fry</p>
+                <a
+                    href="index2.html?name=Fish-Fry&price=450&desc=Crispy%20fried%20fish%20served%20hot%20with%20a%20savory%20taste.&rest=FoodieRide&img=https://cdn.pixabay.com/photo/2015/04/15/14/57/food-723922_1280.jpg">
+                    Buy Now
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>=
+
+
+    <footer>
+        <div id="footer">
+            <div class="first-text">
+                <h1>Foodie ridE</h1>
+            </div>
+            <div class="py-6">
+                <div class="order-1">
+                    <h4 style="font-size: 24px;">Eternal</h4>
+                    <div class="order1-a">
+                        <a>Foodie ridE <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>PathaU <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>District <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Hyperpure <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Feeding Nepal <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Invester Relations <i class="ri-arrow-right-double-fill"></i></a>
+                    </div>
+                </div>
+                <div class="order-2">
+                    <h4 style="font-size: 24px;">Learn More</h4>
+                    <div class="order2-a">
+                        <a>Privacy <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Security <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Terms of Services <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Help & Support <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Report a Fraud <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Blog <i class="ri-arrow-right-double-fill"></i></a>
+                    </div>
+                </div>
+                <div class="order-3">
+                    <h4 style="font-size: 24px;">For Restaurants</h4>
+                    <div class="order2-a">
+                        <a>Partner with Us <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Apps For You <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Restaurant Counselling <i class="ri-arrow-right-double-fill"></i></a>
+                    </div>
+                </div>
+                <div class="order-4">
+                    <h4 style="font-size: 24px;">For Delivery Partners</h4>
+                    <div class="order2-a">
+                        <a>Partner with Us <i class="ri-arrow-right-double-fill"></i></a>
+                        <a>Apps For You <i class="ri-arrow-right-double-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media">
+                <h4>Social Links</h4>
+                <div class="photo">
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+
+                </div>
+            </div>
+            <hr>
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                Content Policies. All trademarks are properties of their respective owners
+                2026-2030 © Foodie ridE™ Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+
+</html>

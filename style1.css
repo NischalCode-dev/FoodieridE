@@ -1,0 +1,744 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#main .mouse {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(238, 142, 17);
+    transition: all ease 0.75s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mouse h5 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    cursor: default;
+    user-select: none;
+
+}
+
+#dddd {
+    height: 10vh;
+    width: 100%;
+}
+
+.video {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 999;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+.head {
+    height: 60vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-text {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-text h1 {
+    font-size: 60px;
+    font-family: cursive;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.up-text2 {
+    height: 35vh;
+}
+
+.up-text2 h3 {
+    font-size: 40px;
+    font-family: cursive;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    text-align: center;
+}
+
+.up-text3 {
+    height: 30vh;
+    margin: 20px 0px 0px 0px;
+}
+
+.up-text3 p {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* goes up */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* comes back */
+    }
+}
+
+.scroll p {
+    font-family: cursive;
+}
+
+.scroll i {
+    color: white;
+    font-size: 15px;
+}
+
+#page2 {
+    height: fit-content;
+    width: 100%;
+}
+
+.top-sell {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.top-sell h2 {
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.wheel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+/* WHEEL */
+.wheel {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    touch-action: none;
+}
+
+/* ITEMS */
+.wheel-item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid orange;
+}
+
+.wheel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    margin-top: 80px;
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    margin-top: 15px;
+}
+
+.product-card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.buy-btn {
+    display: inline-block;
+    font-size: 16px;
+    background: black;
+    border: 2px solid white;
+    padding: 6px 20px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#page3 h1 {
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.scroll-container {
+    display: flex;
+    /* horizontal layout */
+    overflow-x: auto;
+    /* enable horizontal scroll */
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.card {
+    min-width: 300px;
+    /* important for scrolling */
+    height: 450px;
+    flex-shrink: 0;
+    /* prevents shrinking */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card a {
+    font-family: cursive;
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 5px;
+}
+.card a:hover{
+    text-decoration: underline;
+    color: red;
+
+}
+
+.card p {
+    font-family: cursive;
+    text-align: center;
+}
+
+.card-a a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    /* keeps image nice */
+}
+
+/* optional hover effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* optional scrollbar styling */
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+
+#footer {
+    margin-top: 30px;
+    height: 95vh;
+    width: 100%;
+    display: block;
+    unicode-bidi: isolate;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 0px 10px;
+    overflow-x: hidden;
+}
+
+.first-text {
+    height: 50px;
+    width: 100%;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.py-6 {
+    height: 260px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.order-1 {
+    height: 250px;
+    width: 20%;
+}
+
+.order1-a {
+    height: 150px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #62626A;
+    display: grid;
+}
+
+.order1-a a i {
+    display: none;
+}
+
+.order1-a a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.order1-a a:hover i {
+    display: initial;
+}
+
+.order-2 {
+    height: 250px;
+    width: 20%;
+}
+
+.order2-a {
+    height: 150px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #62626A;
+    display: grid;
+}
+
+.order2-a a i {
+    display: none;
+}
+
+.order2-a a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.order2-a a:hover i {
+    display: initial;
+}
+
+.order-3 {
+    height: 250px;
+    width: 20%;
+}
+
+.order3-a {
+    height: 150px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #62626A;
+    display: grid;
+}
+
+.order3-a i {
+    display: none;
+}
+
+.order3-a a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.order3-a a:hover i {
+    display: initial;
+}
+
+.order-4 {
+    height: 250px;
+    width: 20%;
+}
+
+.order4-a {
+    height: 150px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #62626A;
+    display: grid;
+}
+
+.order4-a a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.social-media {
+    height: 100px;
+    width: 100%;
+}
+
+.social-media h4 {
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+.photo {
+    height: 40px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.photo a {
+    text-decoration: none;
+}
+
+.photo i {
+    font-size: 40px;
+    color: white;
+}
+
+
+#footer p {
+    color: #62626A;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: default;
+}
+
+
+/* ✅ Mobile Responsive (max-width: 600px) */
+@media (max-width: 600px) {
+
+    #main {
+        height: auto;
+    }
+
+    #main .mouse {
+        display: none;
+    }
+
+    .video {
+        height: 100vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #bg-video {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .head {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .up-text {
+        height: auto;
+    }
+
+    .up-text h1 {
+        margin-top: 60px;
+        font-size: 60px;
+        font-family: cursive;
+    }
+
+    .up-text2 {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .up-text2 h3 {
+        font-size: 30px;
+        /* smaller subheading */
+    }
+
+    .up-text3 {
+        height: 20vh;
+    }
+
+    .up-text3 p {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .scroll {
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .scroll p {
+        font-size: 25px;
+    }
+
+    /* mouse circle hidden on mobile (optional) */
+    .mouse {
+        display: none;
+    }
+}
+
+/* ✅ Mobile Responsive (max-width: 600px) */
+@media (max-width: 600px) {
+
+    #page2 {
+        height: fit-content;
+        padding: 20px 10px;
+    }
+
+    .top-sell h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* 🔵 Wheel smaller */
+    .wheel {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* 🔵 Items smaller */
+    .wheel-item {
+        width: 60px;
+        height: 60px;
+        border: 2px solid orange;
+    }
+
+    /* 🔵 Wrapper spacing */
+    .wheel-wrapper {
+        margin-top: 20px;
+    }
+
+    /* 🔵 Product card */
+    .product-card {
+        width: 90%;
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-card h2 {
+        font-size: 18px;
+    }
+
+    .product-card p {
+        font-size: 13px;
+    }
+
+    /* 🔵 Button smaller */
+    .product-card button {
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+
+    /* 🔵 Improve touch spacing */
+    .wheel-item img {
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #footer {
+        min-height: 135vh;
+    }
+
+    #footer {
+        height: auto;
+        /* allow natural height */
+        padding: 20px 10px;
+    }
+
+    .first-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .first-text h1 {
+        font-size: 24px;
+    }
+
+    .py-6 {
+        flex-direction: column;
+        /* stack sections */
+        align-items: flex-start;
+        gap: 25px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .order-1,
+    .order-2,
+    .order-3,
+    .order-4 {
+        width: 100%;
+        /* full width */
+        height: auto;
+    }
+
+    .order1-a,
+    .order2-a,
+    .order3-a,
+    .order4-a {
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    /* social section */
+    .social-media {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .social-media h4 {
+        margin: 0px 0px 0px 20px;
+    }
+
+    .photo {
+        width: 100%;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: 10px 0px 0px 20px;
+    }
+
+    .photo i {
+        font-size: 30px;
+    }
+
+    /* bottom text */
+    #footer p {
+        text-align: center;
+        font-size: 11px;
+        margin: 10px 0px 0px 0px;
+    }
+}
+@media (max-width: 600px) {
+
+    #page3 {
+        height: auto; /* allow content to grow */
+        margin-top: 30px;
+    }
+
+    #page3 h1 {
+        font-size: 22px;
+        text-decoration-thickness: 2px;
+    }
+
+    .scroll-container {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .card {
+        min-width: 220px;   /* smaller cards for mobile */
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .card img {
+        height: 80%; /* adjust image height */
+    }
+
+    .card-a {
+        max-height: 60px;
+        text-align: center;
+    }
+
+    .card-a p {
+        font-size: 20px;
+    }
+
+    .card-a a {
+        font-size: 14px;
+    }
+
+    /* optional: smoother scrolling on mobile */
+    .scroll-container {
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .card {
+        scroll-snap-align: start;
+    }
+}
